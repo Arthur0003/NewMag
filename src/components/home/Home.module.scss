@@ -1,0 +1,160 @@
+.desktopBooksWrapper {
+  @apply flex flex-col;
+
+  .bestSellers {
+    @apply py-[100px];
+  }
+}
+
+.flexCardsWrapper {
+  @apply flex rounded-3xl overflow-hidden;
+}
+
+.bestSellerCard {
+  @apply py-[60px] px-[90px] bg-[#C195DF] flex-grow;
+
+  &:nth-child(2) {
+    background-color: #3b5cb3;
+  }
+  &:nth-child(3) {
+    background-color: #e9c969;
+  }
+
+  .imgBlock {
+    @apply mb-[60px] 2xl:mb-[30px];
+
+    img {
+      @apply block w-full;
+    }
+  }
+
+  .aboutBlock {
+    @apply text-white text-[20px] leading-[30px] text-center 2xl:text-[16px] 2xl:leading-6;
+  }
+}
+
+.others {
+  @apply py-[100px] bg-[#F1F6F9];
+
+  .otherWrapper {
+    @apply flex items-center justify-center flex-wrap gap-y-5 gap-x-[40px];
+    .otherCard {
+      @apply py-10 px-[65px] bg-[#485A88] rounded-[20px] overflow-hidden;
+      .otherCardWrapper {
+        @apply max-w-[173px];
+        .otherImgBlock {
+          @apply mb-7;
+          img {
+            @apply block w-full;
+          }
+        }
+        .otherAboutBlock {
+          @apply text-white text-[16px] leading-[28px] text-center;
+        }
+      }
+    }
+  }
+}
+
+.articleWrapper {
+  @apply py-[100px];
+
+  .articleBlock {
+    @apply flex flex-wrap gap-y-[60px];
+
+    .title {
+      @apply text-[30px] leading-[40px] flex-grow flex-shrink-0 basis-[50%] font-semibold;
+    }
+    .allArticles {
+      @apply flex justify-end flex-grow flex-shrink-0 basis-[50%] text-[red] text-lg cursor-pointer;
+
+      div {
+        @apply flex items-center gap-x-[11px];
+
+        .arrowTitle {
+          @apply text-lg leading-6 font-medium;
+        }
+
+        .rightArrow {
+          @apply self-center;
+        }
+      }
+    }
+    .articleCardsWrapper {
+      @apply flex flex-wrap flex-grow flex-shrink-0 basis-[50%] justify-between gap-x-[40px] gap-y-[20px];
+
+      .articleCardWrapper {
+        @apply p-[10px] rounded-[10px] bg-[#F1F6F9];
+        .articleCard {
+          @apply max-w-[283px];
+
+          .articleCardImg {
+            @apply mb-[20px] rounded-[10px] overflow-hidden;
+
+            img {
+              @apply block w-full;
+            }
+          }
+
+          .articalCardDesc {
+            @apply text-[16px] leading-[30px];
+          }
+        }
+      }
+    }
+  }
+}
+
+.attentionNeedWrapper {
+  @apply py-[100px] bg-[#F1F6F9];
+  .attentionBlock {
+    @apply flex flex-wrap gap-y-[60px];
+
+    .title {
+      @apply text-[30px] leading-[40px] flex-grow flex-shrink-0 basis-[50%] font-semibold;
+    }
+    .allArticles {
+      @apply flex justify-end flex-grow flex-shrink-0 basis-[50%] text-[red] text-lg cursor-pointer;
+
+      div {
+        @apply flex items-center gap-x-[11px];
+
+        .arrowTitle {
+          @apply text-lg leading-6 font-medium;
+        }
+
+        .rightArrow {
+          @apply self-center;
+        }
+      }
+    }
+    .attentionCardsWrapper {
+      @apply flex gap-x-[60px] flex-wrap flex-grow flex-shrink-0 basis-[50%] justify-between gap-y-[30px];
+      .attentionCard {
+        @apply flex flex-col gap-y-[21px] max-w-[230px];
+
+        img {
+          @apply flex w-full;
+        }
+
+        .info {
+          @apply flex flex-col gap-y-[10px];
+
+          h4 {
+            @apply text-[18px] leading-[25px] font-bold whitespace-nowrap text-ellipsis overflow-hidden;
+          }
+          p {
+            @apply text-[16px] leading-[22px] font-normal;
+          }
+          span {
+            @apply text-[18px] leading-[25px] font-bold text-[#F34802];
+          }
+        }
+
+        button {
+          @apply border text-[16px] leading-[22px] font-medium py-[10px] rounded-[10px] border-[black] cursor-pointer;
+        }
+      }
+    }
+  }
+}

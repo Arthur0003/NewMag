@@ -1,0 +1,79 @@
+.desktopHeaderBlock {
+  @apply lg:hidden;
+}
+
+.wrapper {
+  @apply flex w-full justify-between items-center py-5;
+
+  .logo {
+    @apply 3xl:max-w-[130px] 2xl:max-w-[120px];
+
+    img {
+      @apply block w-full;
+    }
+  }
+}
+
+.options {
+  @apply flex items-center gap-x-8 3xl:gap-x-5 2xl:gap-x-4;
+
+  .cart,
+  .search {
+    @apply 2xl:max-w-[14px];
+  }
+
+  div {
+    @apply cursor-pointer;
+  }
+
+  .lang {
+    @apply flex items-center gap-x-1 3xl:gap-x-[3px] 2xl:gap-x-[2px];
+
+    .langSelect {
+      @apply flex items-center 2xl:max-w-[14px];
+
+      img {
+        @apply shrink-0;
+      }
+    }
+
+    span {
+      @apply text-lg 2xl:text-sm;
+    }
+
+    img {
+      @apply 2xl:max-w-[14px];
+    }
+  }
+}
+
+.minHeaderWrapper {
+  @apply pt-5 hidden lg:block;
+  .minLogo {
+    @apply flex justify-between items-center mb-[30px];
+    .logoImg {
+      @apply max-w-[120px];
+    }
+
+    .iconsBlock {
+      @apply flex items-center gap-x-[25px];
+    }
+  }
+
+  .search {
+    @apply flex items-center justify-center;
+    label {
+      @apply relative w-[60%] md:w-[100%];
+      span {
+        @apply absolute left-5 top-[50%] -translate-y-[50%];
+      }
+      input {
+        @apply py-[14px] pl-[60px] pr-[10px] bg-[#F1F6F9] w-[100%] rounded-[10px] placeholder:text-[16px] leading-[22px];
+
+        &:focus-visible {
+          @apply outline-0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,235 @@
+.footerWrapper {
+  @apply bg-black;
+  .footerContainer {
+    @apply pl-[200px] pt-[99px] pr-[177px] pb-[20px];
+
+    @screen 3xl {
+      @apply pl-[120px] pr-[100px];
+    }
+
+    @screen 2xl {
+      @apply pl-[100px] pr-[80px];
+    }
+
+    @screen lg {
+      @apply pl-5 pr-5 pt-[60px] pb-5;
+    }
+
+    .contentWrapper {
+      @apply flex flex-col;
+
+      h3 {
+        @apply mb-[52px] text-[20px] leading-[27px] font-semibold text-white relative pb-[12px];
+
+        &:after {
+          @apply content-[''] absolute bottom-0 left-0 h-[2px] w-[60px] bg-white;
+        }
+      }
+
+      li {
+        @apply text-[white] text-[16px] leading-[22px] mb-[15px];
+      }
+
+      .logo {
+        @apply mb-[60px];
+      }
+
+      .options {
+        @apply flex mb-[100px] justify-between;
+
+        .section {
+          @apply pr-[120px] relative;
+
+          &:after {
+            @apply content-[''] absolute bottom-0 right-0 h-[122px] w-[2px] bg-white/[0.4];
+          }
+
+          @screen lg {
+            &:after {
+              @apply content-[''] absolute bottom-0 h-[1px] w-full bg-white/[0.4];
+            }
+          }
+
+          .sectionNav {
+            @apply flex gap-[100px];
+
+            .leftSide {
+              li {
+                @apply last:mb-0;
+              }
+            }
+
+            .rightSide {
+              li {
+                @apply last:mb-0;
+              }
+            }
+          }
+
+          @screen 2xl {
+            .sectionNav {
+              @apply gap-x-[50px];
+            }
+          }
+
+          @screen lg {
+            .sectionNav {
+              @apply gap-x-[100px];
+            }
+          }
+        }
+
+        @screen 3xl {
+          .section {
+            @apply pr-[30px];
+          }
+        }
+
+        @screen lg {
+          .section {
+            @apply pr-0 pb-10 mb-10;
+          }
+        }
+      }
+
+      @screen lg {
+        .options {
+          @apply flex-col mb-[60px];
+        }
+      }
+
+      .order {
+        @apply px-[120px] relative;
+
+        &:after {
+          @apply content-[''] absolute bottom-0 right-0 h-[122px] w-[2px] bg-white/[0.4];
+        }
+
+        @screen lg {
+          &:after {
+            @apply content-[''] absolute bottom-0 h-[1px] w-full bg-white/[0.4];
+          }
+        }
+
+        h4 {
+          @apply block text-[16px] leading-[22px] font-medium mb-[15px] text-[white];
+        }
+
+        .heaeding {
+          @apply mb-[30px];
+        }
+
+        .icons {
+          @apply flex  gap-x-[15px] gap-y-[10px] flex-wrap;
+
+          div {
+            @apply flex-shrink-0;
+          }
+        }
+      }
+
+      @screen 3xl {
+        .order {
+          @apply px-[30px];
+        }
+      }
+
+      @screen lg {
+        .order {
+          @apply px-0 pb-10 mb-10;
+        }
+      }
+
+      .contact {
+        @apply flex flex-col pl-[120px] text-[white];
+
+        p {
+          @apply mb-5;
+        }
+
+        .contactIcons {
+          @apply flex gap-x-5 mb-10 w-[381px];
+        }
+
+        @screen 2xl {
+          .contactIcons {
+            @apply w-[280px];
+          }
+        }
+
+        .subscribe {
+          @apply flex items-center;
+
+          label {
+            @apply relative w-full rounded-[10px] bg-white overflow-hidden;
+
+            input {
+              @apply w-full
+              max-w-[65%]
+              block
+              pl-[15px]
+              pr-[10px]
+              py-[16px] 
+              text-[#4C4C4C] 
+              text-[14px] 
+              font-normal
+              border-none
+              outline-none
+              placeholder:text-[#4C4C4C];
+
+              &:focus,
+              &:focus-visible {
+                @apply border-transparent outline-transparent ring-0;
+              }
+            }
+
+            @screen 2xl {
+              input {
+                @apply max-w-[calc(100%-100px)];
+              }
+            }
+
+            button {
+              @apply absolute 
+              right-1
+              top-[50%]
+              cursor-pointer 
+              -translate-y-[50%] 
+              px-[30px] 
+              py-[10px] 
+              rounded-[10px] 
+              bg-[#F34802];
+            }
+
+            @screen 2xl {
+              button {
+                @apply px-[15px];
+              }
+            }
+          }
+
+          // @screen lg {
+          //   label {
+          //     @apply max-w-[40%];
+          //   }
+          // }
+        }
+      }
+
+      @screen 3xl {
+        .contact {
+          @apply pl-[30px];
+        }
+      }
+
+      @screen lg {
+        .contact {
+          @apply pl-0 pb-10 mb-10;
+        }
+      }
+    }
+    .copyrightBlock {
+      @apply flex justify-between items-center text-[white] text-[14px];
+    }
+  }
+}
